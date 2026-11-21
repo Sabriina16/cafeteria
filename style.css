@@ -1,0 +1,597 @@
+
+/* TIPOGRAFÍAS */
+
+@font-face {
+    font-family: 'VarnaTitulos';
+    src: url('Fonts_proyecto/lancero.otf') format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'VarnaTexto';
+    src: url('Fonts_proyecto/helvena-4.otf') format('opentype');
+    font-weight: normal;
+}
+
+/* TÍTULOS */
+
+h1, h2, h3 {
+    font-family: 'VarnaTitulos', serif;
+    font-weight: normal;
+}
+
+/* RESTO DE LA WEB */
+
+body, p, a, button, span, label {
+    font-family: 'VarnaTexto', serif;
+}
+
+body {
+    background-color: #080503;
+    background-image: url('images/granos-cafe.png');
+    background-repeat: repeat;
+    background-size: 900px auto;
+    background-position: center top;
+    background-attachment: fixed;
+
+    color: #F1E1A4;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+    font-weight: 300;
+    min-height: 100vh;
+}
+
+
+/* TÍTULOS */
+
+h1 {
+    font-size: 55px;
+    color: #D6A15E;
+}
+
+h2 {
+    font-size: 36px;
+    color: #D6A15E;
+    text-align: center;
+}
+
+h3 {
+    color: #F1E1A4;
+}
+
+/* PÁRRAFOS */
+
+
+p {
+    font-family: 'VarnaTexto', serif;
+    font-size: 22px;
+    color: #C7A46B;
+    font-weight: normal;
+    line-height: 1.7;
+}
+
+/* CABECERA */
+
+header {
+    padding: 25px;
+    margin: 20px;
+    border: 2px solid #6b7b6a;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    background-color: transparent;
+}
+
+/* MENÚ DE NAVEGACIÓN */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+}
+
+nav a {
+    font-family: 'VarnaTexto', serif;
+    color: #6b7b6a;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 15px;
+    border: 1px solid white;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #D6A15E;
+}
+
+/* PORTADA PRINCIPAL */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 40px;
+    padding: 50px 30px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text p {
+    text-align: center;
+}
+
+.hero-text .boton {
+    display: table;
+    margin: 0 auto;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* BOTÓN */
+
+.boton {
+    display: inline-block;
+    background-color: #6b7b6a;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.boton:hover {
+    background-color: #F1E1A4;
+}
+
+/* CARTA DE CAFÉS */
+
+.carta {
+    padding: 50px 30px;
+}
+
+.productos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.producto {
+    background-color: #FAF8F5;
+    width: 280px;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid #D6A15E;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.producto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.producto h3 {
+    color: #2F2A24;
+    font-weight: normal;
+}
+
+.producto p {
+    color: #C7A46B;
+}
+
+.producto p {
+    color: #C7A46B;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* PRECIOS DE LAS TARJETAS */
+
+.producto span {
+    font-family: 'VarnaTitulos', serif;
+    font-weight: normal;
+    color: #B8B8B8;
+}
+
+
+/* PIE DE PÁGINA */
+
+footer {
+    background-color: transparent;
+    color: #F1E1A4;
+    font-size: 14px;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* NUESTRA ESENCIA */
+
+.esencia {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 70px 50px;
+    background-color: transparent;
+}
+
+.esencia-image {
+    flex: 1;
+}
+
+.esencia-image img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.esencia-text {
+    flex: 1;
+    text-align: left;
+}
+
+.esencia-text p {
+    text-align: center;
+}
+
+.esencia-text .boton {
+    display: table;
+    margin: 0 auto;
+}
+
+.esencia-text h2 {
+    font-size: 32px;
+    color: #D6A15E;
+}
+
+.esencia-text p {
+    line-height: 1.7;
+    color: #C7A46B;
+}
+
+/* HORARIOS Y UBICACIÓN */
+
+/* HORARIOS Y UBICACIÓN */
+
+.ubicacion {
+    padding: 40px 30px;
+    margin: 40px;
+    text-align: center;
+    background-color: transparent;
+    border: 2px solid #6b7b6a;
+    border-radius: 30px;
+}
+
+.ubicacion h2 {
+    color: #D6A15E;
+    margin-bottom: 35px;
+}
+
+.ubicacion-contenido {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+.horarios,
+.direccion {
+    flex: 1;
+    min-width: 250px;
+    padding: 15px;
+    text-align: center;
+}
+
+.horarios,
+.direccion {
+    padding: 15px;
+    min-width: 250px;
+}
+
+.ubicacion h3 {
+    color: #F1E1A4;
+    margin-bottom: 20px;
+}
+
+.ubicacion p {
+    font-size: 19px;
+    line-height: 1.7;
+    margin: 15px 0;
+}
+
+/* BOTÓN FUERA DEL RECUADRO */
+
+.ubicacion-boton {
+    text-align: center;
+    margin: -15px auto 30px;
+}
+
+/* MAPA */
+
+.mapa {
+    max-width: 900px;
+    margin: 40px auto 0;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+/* TIENDA ONLINE */
+
+.tienda {
+    padding: 60px 30px;
+    text-align: center;
+    background-color: transparent;
+}
+
+.tienda h2 {
+    color: #D6A15E;
+    margin-bottom: 20px;
+}
+
+.tienda > p {
+    margin-bottom: 35px;
+    color: #C7A46B;
+}
+
+.tienda .productos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.tienda .producto {
+    background-color: #FAF8F5;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #D6A15E;
+    width: 240px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.4);
+}
+
+.tienda .producto img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.tienda .producto h3 {
+    color: #2F2A24;
+}
+
+.tienda .producto p {
+    color: #C7A46B;
+}
+
+.tienda .producto span {
+    display: block;
+    margin: 15px 0;
+    font-family: 'VarnaTitulos', serif;
+    font-weight: normal;
+    color: #B8B8B8;
+}
+
+
+
+/* BOTONES DE COMPRA */
+
+.anadir-carrito,
+#finalizar-compra {
+    background-color: #6b7b6a;
+    color: #080503;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+
+.boton:hover,
+.anadir-carrito:hover,
+#finalizar-compra:hover {
+    background-color: #849582;
+    color: white;
+}
+
+.anadir-carrito {
+    display: block;
+    margin: 15px auto 0;
+    text-align: center;
+}
+
+
+.anadir-carrito:hover,
+#finalizar-compra:hover {
+    background-color: #F1E1A4;
+}
+
+/* CARRITO */
+
+.carrito {
+    padding: 60px 25px;
+    text-align: center;
+    background-color: transparent;
+}
+
+.carrito h2 {
+    color: #D6A15E;
+    margin-bottom: 30px;
+}
+
+#lista-carrito {
+    max-width: 650px;
+    margin: auto;
+}
+
+.item-carrito {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #2F2A24;
+    color: #CFD1D1;
+    border-radius: 10px;
+}
+
+.eliminar-producto {
+    background-color: #a83e32;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.total-carrito {
+    margin: 25px;
+    color: #D6A15E;
+}
+
+.pago {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.pago label {
+    cursor: pointer;
+    color: #F1E1A4;
+}
+
+.pago #finalizar-compra {
+    margin-top: 15px;
+    padding: 15px 30px;
+}
+
+/* BOTÓN FLOTANTE WHATSAPP */
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    z-index: 9999;
+}
+
+.whatsapp img {
+    width: 27px;
+    height: 27px;
+}
+
+.whatsapp:hover {
+    background-color: #128C7E;
+    transform: scale(1.1);
+}
+
+/* TEXTOS FUERA DE LAS TARJETAS */
+
+.hero-text p,
+.esencia-text p,
+.ubicacion p,
+.tienda > p,
+footer {
+    color: #E0D6C2;
+}
+
+/* ADAPTACIÓN A MÓVILES */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav a {
+        margin: 5px;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
+    .productos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .producto {
+        width: 100%;
+        max-width: 280px;
+        box-sizing: border-box;
+    }
+
+    .esencia {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .esencia-text {
+        text-align: center;
+    }
+
+    footer {
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .item-carrito {
+        flex-wrap: wrap;
+    }
+
+    .tienda {
+        padding: 40px 15px;
+    }
+}
+html, body {
+    background-color: #080503;
+}
